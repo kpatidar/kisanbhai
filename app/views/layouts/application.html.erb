@@ -42,16 +42,16 @@
         <div class="menu">	
           <ul class="top-nav">
              <li class="<%= ["/", dashboard_path].include?(request.fullpath) ? 'active' : '' %>">
-               <%= link_to 'HOME', dashboard_path %>
+               <%= link_to t('view.home'), dashboard_path %>
              </li>
              <li class="<%= [about_path].include?(request.fullpath) ? 'active' : '' %>">
-               <%= link_to 'ABOUT', about_path %>
+               <%= link_to t('view.about_us'), about_path %>
              </li>
              <li class="<%= [services_path].include?(request.fullpath) ? 'active' : '' %>">
-               <%= link_to 'SERVICES', services_path, :class => "hsubs" %>
+               <%= link_to t('view.services'), services_path, :class => "hsubs" %>
              </li>
              <li class="<%= [contact_path].include?(request.fullpath) ? 'active' : '' %>">
-               <%= link_to 'CONTACT', contact_path %>
+               <%= link_to t('view.contact'), contact_path %>
              </li>
             <div class="clear"></div>
           </ul>
@@ -59,6 +59,8 @@
         </div>
       </div>
     </div>
+    <%= link_to "English",  session[:send_params].merge({:locale => :en}) if params[:locale].to_s != 'en' %>
+    <%= link_to "Hindi",  session[:send_params].merge({:locale => :hi}) if params[:locale].to_s != 'hi' %>
   </div>
 
   <%= yield %>
@@ -75,7 +77,7 @@
             <h3>: +919926094723</h3>
           </div>
           <div class="clear"></div>
-          <h2><a href="/">Kisan Bhai</a></h2>
+          <h2><a href="/"><%= t('view.kisan_bhai') %></a></h2>
           <div class="copy">
             <p class="w3-link">© All Rights Reserved | Design by Nimar groups</a></p>
           </div>
