@@ -41,10 +41,18 @@
       <div class="wrapper1">	
         <div class="menu">	
           <ul class="top-nav">
-             <li  class="active"><%= link_to 'HOME', dashboard_path %></li>
-             <li><%= link_to 'ABOUT', about_path %></li>
-             <li><%= link_to 'SERVICES', services_path, :class => "hsubs" %></li>
-            <li><%= link_to 'CONTACT', contact_path %></li>
+             <li class="<%= ["/", dashboard_path].include?(request.fullpath) ? 'active' : '' %>">
+               <%= link_to 'HOME', dashboard_path %>
+             </li>
+             <li class="<%= [about_path].include?(request.fullpath) ? 'active' : '' %>">
+               <%= link_to 'ABOUT', about_path %>
+             </li>
+             <li class="<%= [services_path].include?(request.fullpath) ? 'active' : '' %>">
+               <%= link_to 'SERVICES', services_path, :class => "hsubs" %>
+             </li>
+             <li class="<%= [contact_path].include?(request.fullpath) ? 'active' : '' %>">
+               <%= link_to 'CONTACT', contact_path %>
+             </li>
             <div class="clear"></div>
           </ul>
           <div class="clear"></div>
