@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function () {
+  $('#camera_wrap_1').camera({
+    height: '550px',
+    loader: 'bar',
+    pagination: false,
+    thumbnails: true
+  });
+});
