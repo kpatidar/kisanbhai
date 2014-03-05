@@ -4,7 +4,12 @@ Kisanbhai::Application.routes.draw do
 
   devise_for :users
 
-  get "home/dashboard"
+  match "home/dashboard"  => 'home#dashboard', :as => :dashboard
+  match "home/about"  => 'home#about', :as => :about
+  match "home/services"  => 'home#services', :as => :services
+  match "home/details"  => 'home#details', :as => :details
+  match "home/contact"  => 'home#contact', :as => :contact
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
