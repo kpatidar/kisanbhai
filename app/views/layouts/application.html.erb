@@ -59,10 +59,12 @@
         </div>
       </div>
     </div>
-    <%= link_to "English",  session[:send_params].merge({:locale => :en}) if params[:locale].to_s != 'en' %>
-    <%= link_to "Hindi",  session[:send_params].merge({:locale => :hi}) if params[:locale].to_s != 'hi' %>
   </div>
 
+  <div class="flag_margin">
+    <%= link_to image_tag("england.gif",title: 'English', class: "flag_img"),  session[:send_params].merge({:locale => :en}) if params[:locale].to_s != 'en' %>
+    <%= link_to image_tag("india.gif",title: 'Hindi', class: "flag_img"),  session[:send_params].merge({:locale => :hi}) if params[:locale].to_s != 'hi' %>
+  </div>
   <%= yield %>
 
   <!-- start footer -->
