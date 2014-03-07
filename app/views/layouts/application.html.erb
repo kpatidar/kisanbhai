@@ -18,25 +18,26 @@
   <script type='text/javascript' src="/assets/jquery.lightbox.js"></script>
 </head>
 <body>
-  
-  <div class="slider">
-    <!-- #camera_wrap_1 -->
-    <div class="fluid_container">
-      <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-        <div data-src="/assets/slider1.jpg">
-        </div>
-        <div  data-src="/assets/slider2.jpg">
-        </div>
-        <div  data-src="/assets/slider3.jpg">
-        </div>
-        </div><!-- #camera_wrap_1 -->
-       <div class="clear"></div>
+  <% if ["/", dashboard_path].include?(request.fullpath) %>
+    <div class="slider">
+      <!-- #camera_wrap_1 -->
+      <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+          <div data-src="/assets/slider1.jpg">
+          </div>
+          <div  data-src="/assets/slider2.jpg">
+          </div>
+          <div  data-src="/assets/slider3.jpg">
+          </div>
+          </div><!-- #camera_wrap_1 -->
+         <div class="clear"></div>
+      </div>
+      <!-- end #camera_wrap_1 -->
     </div>
-    <!-- end #camera_wrap_1 -->
-  </div>
+  <% end %>
   <!-- start header -->
-  
-  <div class="header_bg">
+  <% sty = "margin-top: 0px !important" if ["/", dashboard_path].exclude?(request.fullpath)%>
+  <div class="header_bg" style="<%= sty %>">
     <div class="wrap">
       <div class="wrapper1">	
         <div class="menu">	
