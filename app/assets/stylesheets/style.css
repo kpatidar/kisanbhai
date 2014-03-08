@@ -105,7 +105,7 @@ p.para{
 	position: relative;
 	background: #279174;	
 }
-.top-nav li:nth-child(4){
+.top-nav li:nth-child(6){
 	border-right:none;
 }
 .top-nav li {
@@ -114,7 +114,7 @@ p.para{
 	list-style: none;
 	float: left;
 	display: block;
-	width: 24.88888%;
+	width: 15.889%;
 }
 .top-nav li.active a{
 	color:#E7D93C;

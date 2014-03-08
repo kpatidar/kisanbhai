@@ -1,0 +1,16 @@
+.text-field{
+	font-family: Arial, Geneva,Helvetica, sans-serif;
+	font-size: 1em;
+	color: #9E9D9D;
+	padding: 20px;
+	display: block;
+	width: 85%;
+	background: #EBEBEB;
+	border: 1px solid #C5C5C5;
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}

@@ -33,30 +33,29 @@
 				<div class="col span_2_of_4">
 				  <div class="contact-form">
 				  	<h2 class="style"><%= t('view.contact_us') %></h2>
-					       <form method="post" action="contact-post.html">
-					    	<div>
-						    	<span><label><%= t('view.name') %></label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label><%= t('view.e-mail') %></label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						     	<span><label><%= t('view.mobile') %></label></span>
-						    	<span><input name="userPhone" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label><%= t('view.subject') %></label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div>
-						   <div>
-						   		<span><input type="submit" value="<%= t('view.save') %>"></span>
-						  </div>
-					    </form>
-
-				    </div>
-  				</div>		
+            <form method="post" action="contact-post.html">
+              <div>
+                <span><label><%= t('view.name') %></label></span>
+                <span><input name="userName" type="text" class="textbox"></span>
+              </div>
+              <div>
+                <span><label><%= t('view.e-mail') %></label></span>
+                <span><input name="userEmail" type="text" class="textbox"></span>
+              </div>
+              <div>
+                <span><label><%= t('view.mobile') %></label></span>
+                <span><input name="userPhone" type="text" class="textbox"></span>
+              </div>
+              <div>
+                <span><label><%= t('view.subject') %></label></span>
+                <span><textarea name="userMsg"> </textarea></span>
+              </div>
+              <div>
+                <span><input type="submit" value="<%= t('view.save') %>"></span>
+              </div>
+            </form>
+          </div>
+        </div>		
   			<div class="clear"></div>
 		  </div>
 
