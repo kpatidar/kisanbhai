@@ -12,6 +12,12 @@ hi:
     name: आपका नाम
     contact_us: हमसे संपर्क करें
     company_address: कंपनी का पता
+    our_address: हमारा पता
+    kapil_patidar: कपिल पाटीदार
+    manoj_patidar: मनोज पाटीदार
+    pavan_patidar: पवन पाटीदार
+    chandan_patidar: चंदन पाटीदार
+    kundan_patidar: कुन्दन पाटीदार
     find_us_here: यहाँ हमें पता लगाएं
     village_name: गांव - डोंगरगांव
     dist_name: जिला - खरगोन
@@ -25,3 +31,12 @@ hi:
     subject: विषय
     save: सुरक्षित करना
     view_large_map: बड़ा नक्शा देखें
+    password: पासवर्ड
+    remember_me: मुझे याद है
+    sign_in: अंदर जाये
+    sign_up: सदस्य बने
+    login: लॉगिन करें
+    join_us: सदस्य बने
+    pass_confirmation: दोबारा पासवर्ड टाइप करे
+    submit: सुरक्षित करें
+    our_team: हमारी टीम

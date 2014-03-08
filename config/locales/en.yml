@@ -12,6 +12,12 @@ en:
     name: NAME
     conact_us: CONTACT US
     company_address: Company Address
+    our_address: Our Address
+    kapil_patidar: Kapil Patidar
+    manoj_patidar: Manoj Patidar
+    pavan_patidar: Pavan Patidar
+    chandan_patidar: Chandan Patidar
+    kundan_patidar: Kundan Patidar
     find_us_here: Find Us Here
     village_name: Village - Dongargaon
     dist_name: Dist - Khargone
@@ -25,4 +31,12 @@ en:
     subject: SUBJECT
     save: SUBMIT ME
     view_large_map: View Larger Map
-    
+    password: Password
+    remember_me: Remember Me
+    sign_in: Sign In
+    sign_up: Sign Up
+    login: Login
+    join_us: Join Us
+    pass_confirmation: Password Confirmation
+    submit: Submit
+    our_team: Our Team

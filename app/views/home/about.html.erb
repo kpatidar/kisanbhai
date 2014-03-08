@@ -3,41 +3,64 @@
 <div class="wrapper">	
 	<div class="main">
 		<div class="content">
-			<a href="/"><h2>Kisan Bhai</h2></a>
+			<a href="/"><h2><%= t('view.kisan_bhai') %></h2></a>
 		</div>
 		<div class="about-us">
 			<div class="about-header">
-				<h2 class="style">About us</h2>
+				<h2 class="style"><%= t('view.about_us') %></h2>
 					<div class="clear"> </div>
 				</div>
 					<div class="about-info">
-					<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan male</p>
-					<div class="read_more1">
-            <%= link_to 'Read More', details_path, :class => "btn" %>
-          </div>
+					<p class="para">
+            Now its time for every Kisan Bhai to put their existance in IT field.
+            Make there land productive with the help of some advisors who think and care about your valuable land.
+            We are trying to make a strong group of all kisan bhai as a family so that they can discuss and tell to each other for any land problems.
+            We and our team are willing to hear any land probles from kisan bhai so that our advisors can provide best solution.
+            So dont wait for anyone to suggest what should you do and how you can increase your land productivity, Just take help from us and we will always provide you the best answer for your any queries.
+            Make your presense here and show yourself as a good farmer for your land.
+            See everyday for others kisan that what they get today.
+          </p>
 					</div>
+          <div class="about-header">
+            <h2 class="style"><%= t('view.our_team') %></h2>
+              <div class="clear"> </div>
+            </div>
 					<div class="specials">
 					<div class="specials-grids">
 						<div class="special-grid">
-						  <div class="gallery img_style">
-							 <a href="/assets/pic3.jpg"><img src="/assets/pic3.jpg" title="image-name"></a>
+						  <div class="gallery img_style team_photo">
+							 <a href="/assets/kapil.jpg"><img src="/assets/kapil.jpg" title="image-name"></a>
 						  </div>
-							<h3 class="style"><a href="#">consectetur</a></h3>
-							<p class="para">Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac placerat. Quisque erat metus facilisis non feu,aliquam hendrerit quam. Donec ut lectus vel dolor adipiscing tincnt.</p>
+							<h3 class="style"><a href="#"><%= t('view.kapil_patidar') %></a></h3>
+							<p class="para"></p>
 						</div>
 						<div class="special-grid">
-						  <div class="gallery img_style">
-							 <a href="/assets/pic1.jpg"><img src="/assets/pic1.jpg" title="image-name"></a>
+						  <div class="gallery img_style team_photo">
+							 <a href="/assets/manoj.jpg"><img src="/assets/manoj.jpg" title="image-name"></a>
 						  </div>
-							<h3 class="style"><a href="#"> volutpat luctus</a></h3>
-							<p class="para">Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac placerat. Quisque erat metus facilisis non feu,aliquam hendrerit quam. Donec ut lectus vel dolor adipiscing tincnt.</p>
+							<h3 class="style"><a href="#"><%= t('view.manoj_patidar') %></a></h3>
+							<p class="para"></p>
 						</div>
 						<div class="special-grid spe-grid">
-						  <div class="gallery img_style">
-							 <a href="/assets/pic2.jpg"><img src="/assets/pic2.jpg" title="image-name"></a>
+						  <div class="gallery img_style team_photo">
+							 <a href="/assets/pavan.jpg"><img src="/assets/pavan.jpg" title="image-name"></a>
 						  </div>
-							<h3 class="style"><a href="#">Quisque erat</a></h3>
-							<p class="para">Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac placerat. Quisque erat metus facilisis non feu,aliquam hendrerit quam. Donec ut lectus vel dolor adipiscing tincnt.</p>
+							<h3 class="style"><a href="#"><%= t('view.pavan_patidar') %></a></h3>
+							<p class="para"></p>
+						</div>
+						<div class="special-grid spe-grid">
+						  <div class="gallery img_style team_photo">
+							 <a href="/assets/chandan.jpg"><img src="/assets/chandan.jpg" title="image-name"></a>
+						  </div>
+							<h3 class="style"><a href="#"><%= t('view.chandan_patidar') %></a></h3>
+							<p class="para"></p>
+						</div>
+						<div class="special-grid spe-grid">
+						  <div class="gallery img_style team_photo">
+							 <a href="/assets/kundan.jpg"><img src="/assets/kundan.jpg" title="image-name"></a>
+						  </div>
+							<h3 class="style"><a href="#"><%= t('view.kundan_patidar') %></a></h3>
+							<p class="para"></p>
 						</div>
 						<div class="clear"> </div>
 					</div>
